@@ -1,0 +1,46 @@
+#projects{
+  @extend %clearfix;
+}
+
+//General Card styles
+.card{
+  @extend %center;
+  padding: 1em;
+  width: 80%;
+  margin: 0 auto;
+
+  @include mq(s){
+    width: 40%;
+    margin: 1em 5%;
+    float: left;
+  }
+
+  @include mq(m){
+    width: 27.33%;
+    margin: 1em 3%;
+  }
+
+  @include mq(l){
+    width: 21%;
+    margin: 1em 2%;
+  }
+
+  @include mq(xl){
+    width: 16%;
+    margin: 1em 2%;
+  }
+}
+
+//Image Styles
+.card__images{
+  //temp styles
+  display: block;
+  width: 100%;
+  //temp
+  padding-top: 50%;
+  padding-bottom: 50%;
+  background-color: $blue;
+}
+
+
+//Text Styles
