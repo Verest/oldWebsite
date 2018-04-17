@@ -42,7 +42,7 @@
 header{
   background-color: $color-primary-darkest;
   @include section-border(bottom);
-  transition: height 0.5s ease-out;
+  transition: height 0.25s ease-out;
   @include mq(xs){
     height: 4.1875em;
   }
@@ -58,14 +58,13 @@ header{
 }
 
 .nav__row-two{
-  transition: top 0.5s ease-out, transform 0.5s ease-out;
+  transition: transform 0.25s ease-out, font-size .2s linear;
   transform-origin: 0px 0px;
   @extend %clearfix;
 
   @include mq(xs){
     background-color: $color-primary-darker;
-    position: relative;
-    top:-2px;
+    font-size: 0;
     transform: scaleY(.01);
   }
   @include mq(s){
@@ -78,8 +77,8 @@ header{
 
 .nav-show{
   @include mq(xs){
-    top:0px;
     transform: scaleY(1);
+    font-size: 1em;
   }
 }
 

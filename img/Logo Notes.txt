@@ -1,0 +1,3 @@
+Made R Geometric
+Shadow green color offset 2 x, -2y 0 blur 2 spread
+inset shadow silver color 1 spread

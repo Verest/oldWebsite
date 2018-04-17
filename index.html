@@ -1,96 +1,101 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
   <title>Richie Black Homepage</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <div class="stickyFooter">
+      <header id="top">
+        <nav>
+          <div class='nav__row-one'>
+            <div class="wrapper-row-one">
+              <a class="home-link" href='#'>
+                <img src="img/logo.svg" alt="Website Logo" id="logo" />
+                <div class="title">
+                  <h1 class="title__text"><span class="hidden">R</span>ichie Black</h1>
+                </div>
+              </a>
+              <button id="hamburger" type="button">
+                <div class="bar-top"></div>
+                <div class="bar-mid"></div>
+                <div class="bar-bot"></div>
+              </button>
+            </div>
+          </div>
 
-    <header id="top">
-      <nav>
-        <div class='nav__row-one'>
-          <div class="wrapper-row-one">
-            <a class="home-link" href='#'>
-              <img src="img/logo.svg" alt="Website Logo" id="logo" />
-              <div class="title">
-                <h1 class="title__text"><span class="hidden">R</span>ichie Black</h1>
-              </div>
-            </a>
-            <button id="hamburger" type="button">
-              <div class="bar-top"></div>
-              <div class="bar-mid"></div>
-              <div class="bar-bot"></div>
-            </button>
+          <div class='nav__row-two' id="nav-ham">
+            <div class="wrapper-row-two">
+              <ul class='nav__list'>
+                <li class='nav__list__item'><a href='#'>Projects</a></li> <!-- Categories might switch -->
+                <li class='nav__list__item'><a href='#'>Blog</a></li>
+              </ul>
+            </div> <!-- end wrapper -->
           </div>
-        </div>
+        </nav>
+      </header>
 
-        <div class='nav__row-two' id="nav-ham">
-          <div class="wrapper-row-two">
-            <ul class='nav__list'>
-              <li class='nav__list__item'><a href='#'>Projects</a></li> <!-- Categories might switch -->
-              <li class='nav__list__item'><a href='#'>Blog</a></li>
-            </ul>
-          </div> <!-- end wrapper -->
-        </div>
-      </nav>
-    </header>
+      <div class="wrapper">
+        <main>
+          <section id="projects">
+            <h2>Projects</h2>
+            <div class="card">
+              <a href="projects/css-zen">
+                <img class="card__images" src="img/css-zen.png" alt="css zen" />
+              </a>
+              <p>My CSS styling for <a href="http://www.csszengarden.com">CSS Zen Garden</a></p>
+            </div>
+            <div class="card">
+              <a href="projects/stateful-calculator">
+                <img class="card__images" src="img/state-calc.png" alt="stateful calculator" />
+              </a>
+              <p>A calculator made in React that records history</p>
+            </div>
+            <!-- <div class="card">
+              <img class="card__images" src="" alt="" />
+              <p>Placeholder</p>
+            </div>
+            <div class="card">
+              <img class="card__images" src="" alt="" />
+              <p>Placeholder</p>
+            </div>
+            <div class="card">
+              <img class="card__images" src="" alt="" />
+              <p>Placeholder</p>
+            </div>
+            <div class="card">
+              <img class="card__images" src="" alt="" />
+              <p>Placeholder</p>
+            </div> -->
+          </section>
 
-    <div class="wrapper">
-      <main>
-        <section id="projects">
-          <h2>Projects</h2>
-          <div class="card">
-            <img class="card__images" src="#" alt="" />
-            <p>Placeholder</p>
-          </div>
-          <div class="card">
-            <img class="card__images" src="" alt="" />
-            <p>Placeholder</p>
-          </div>
-          <div class="card">
-            <img class="card__images" src="" alt="" />
-            <p>Placeholder</p>
-          </div>
-          <div class="card">
-            <img class="card__images" src="" alt="" />
-            <p>Placeholder</p>
-          </div>
-          <div class="card">
-            <img class="card__images" src="" alt="" />
-            <p>Placeholder</p>
-          </div>
-          <div class="card">
-            <img class="card__images" src="" alt="" />
-            <p>Placeholder</p>
-          </div>
-        </section>
-
-        <section id="scribbles">
-          <h2>Scribbles</h2>
-          <div class="scribble">
-            Placeholder Text
-          </div>
-          <div class="scribble">
-            Placeholder Text
-          </div>
-          <div class="scribble">
-            Placeholder Text
-          </div>
-          <div class="scribble">
-            Placeholder Text
-          </div>
-          <div class="scribble">
-            Placeholder Text
-          </div>
-          <div class="scribble">
-            Placeholder Text
-          </div>
-        </section>
-      </main>
-    </div> <!-- wrapper -->
+          <section id="scribbles">
+            <h2>Scribbles</h2>
+            <div class="scribble">
+              Placeholder Text
+            </div>
+            <div class="scribble">
+              Placeholder Text
+            </div>
+            <div class="scribble">
+              Placeholder Text
+            </div>
+            <div class="scribble">
+              Placeholder Text
+            </div>
+            <div class="scribble">
+              Placeholder Text
+            </div>
+            <div class="scribble">
+              Placeholder Text
+            </div>
+          </section>
+        </main>
+      </div> <!-- wrapper -->
+    </div> <!--end stick footer -->
 
     <footer>
       <div class="to-top"><a href="#top">Back to Top</a></div>
@@ -102,7 +107,7 @@
         <div class="contact">
           <p class="contact__content">
             Contact: <br>
-            temp@richieblack.me
+            richie@richieblack.me
           </p>
         </div>
       </div>

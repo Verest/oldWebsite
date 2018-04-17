@@ -46,3 +46,7 @@ a{
   text-decoration: none;
   color: $color-secondary;
 }
+
+.stickyFooter{
+  min-height: calc(100vh - 14em);
+}
