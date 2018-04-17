@@ -9,6 +9,12 @@
   width: 80%;
   margin: 0 auto;
 
+  p{
+    margin-top: 0.2em;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+
   @include mq(s){
     width: 40%;
     margin: 1em 5%;
@@ -36,6 +42,7 @@
   //temp styles
   display: block;
   width: 100%;
+  border-bottom: 1px solid $gray-dark;
 }
 
 
