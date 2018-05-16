@@ -139,7 +139,7 @@ Header
 	bottom: 0;
 	left:0;
 	right:0;
-	background-image:url("gray-bg.jpg");
+	background-image:url("../img/css-zen/gray-bg.jpg");
 	background-size: cover;
 }
 .summary::after{
@@ -187,7 +187,7 @@ Main Content
 	position: absolute;
 	z-index:-5;
 	top:0;	bottom:0;	left:0;	right:0;
-	background-image: url('green-bg.jpg');
+	background-image: url('../img/css-zen/green-bg.jpg');
 	background-size: cover;
 }
 .explanation::after,
@@ -196,7 +196,7 @@ Main Content
 	position: absolute;
 	z-index:-15;
 	top:0;	bottom:0;	left:0;	right:0;
-	background-image: url("brown-bg.jpg");
+	background-image: url("../img/css-zen/brown-bg.jpg");
 	background-size: cover;
 }
 .main{
@@ -237,7 +237,7 @@ footer::after{
 	bottom: 0;
 	left:0;
 	right:0;
-	background-image:url("gray-bg.jpg");
+	background-image:url("../img/css-zen/gray-bg.jpg");
 	background-size: cover;
 }
 
@@ -247,7 +247,7 @@ Aside
 **************/
 aside{
 	/*#452313*/
-	background-image:url(gray-bg.jpg);
+	background-image:url("../img/css-zen/gray-bg.jpg");
 	background-size:cover;
 	color: #CBDCC8;
 	position:relative;
@@ -317,7 +317,7 @@ Media Queries
 		position: absolute;
 		z-index:-15;
 		top:0;	bottom:0;	left:-81.818%;	right:0%;
-		background-image: url('brown-bg.jpg');
+		background-image: url('../img/css-zen/brown-bg.jpg');
 		background-size: cover;
 	}
 
@@ -375,7 +375,7 @@ Media Queries
 		width: 63%;
 	}
 	.explanation::after{
-		background-image: url("brown-bg.jpg");
+		background-image: url("../img/css-zen/brown-bg.jpg");
 	}
 	.participation::after{
 		background-image:none;
