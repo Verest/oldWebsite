@@ -2,7 +2,7 @@ module.exports = {
   entry: './src/index.js',
 
   output: {
-    path: '/mnt/c/MAMP/htdocs/richieblack.me/projects/markdown-previewer/build',
+    path: '/mnt/c/Users/rb152/Desktop/website_projects/richieblack.me/projects/markdown-previewer',
     filename: 'bundle.js'
   },
 
@@ -16,7 +16,7 @@ module.exports = {
       },
 
       {
-        test:/\.(s*)css$/,
+        test:/\.scss$/,
         use:['style-loader','css-loader', 'sass-loader']
       },
 
