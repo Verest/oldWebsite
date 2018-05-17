@@ -15,22 +15,29 @@ Route::get('/', function () {
   return view( 'index' );
 });
 
+Route::get('/no-exist', function(){
+  $url=request('url');
+  return view( 'noExist', compact('url'));
+})->name('no-exist');
 
 
 Route::get('/projects/{project}', function($project){
   $path = 'projects.'."$project";
+  $current = url()->current(); //failing DRY
 
   if(View::exists( $path )){
     return view( $path );
   }else{
-    return view ("noExist");
+    return redirect()->route('no-exist', ['url' => $current]);
   }
 
 
 });
 
 Route::get('{slug}', function($slug) {
-  //this does not work for matching paths
-  return view ("noExist");
+  $current = url()->current(); //failing DRY
+
+  return redirect()->route('no-exist', ['url' => $current]);
+
 
 })->where('slug', '^.*');
