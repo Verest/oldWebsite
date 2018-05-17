@@ -1,0 +1,77 @@
+.disp-none{
+  display: none;
+}
+.wiki-wrapper{
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5625;
+}
+
+#randomRow,
+#searchRow{
+  padding: 0.5em;
+  @extend %center;
+}
+#randomRow{
+  margin-bottom: 0.7em;
+  @include mq(m){
+    float: right;
+  }
+}
+
+#searchRow{
+  @include mq(m){
+    float: left;
+  }
+}
+
+.pre-content-wrapper{
+  @extend %clearfix;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#randomLink{
+  text-decoration: underline;
+  color: $blue;
+}
+
+.results{
+  @extend %center;
+  @extend %clearfix;
+  display:none;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.result{
+  margin-bottom: 1.06em;
+  @include mq(l){
+    width: 50%;
+    display: inline-block;
+    margin-left: -5px;
+    padding-left: 1em; padding-right: 1em;
+    vertical-align: top;
+  }
+}
+
+.result:hover{
+  background-color: $gray-lighter;
+}
+
+h4{
+  margin-top: .95em;
+  margin-bottom: 1.55em;
+  text-decoration: underline;
+}
+
+.wiki-wrapper a:link,
+.wiki-wrapper a:visited,
+.wiki-wrapper a:hover,
+.wiki-wrapper a:active {
+    color: $gray-dark;
+}
+
+.display-all{
+  display: block;
+}

@@ -11,5 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+//main
+mix.js('resources/assets/main/js/hamburger.js', 'public/js')
+   .sass('resources/assets/main/sass/main.scss', 'public/css');
+
+//application projects
+mix.sass('resources/assets/projects/simon/sass/simon.scss', 'public/css');
+mix.sass('resources/assets/projects/tictactoe/sass/tictactoe.scss', 'public/css');
+mix.sass('resources/assets/projects/wikipedia-viewer/sass/wikipedia-viewer.scss', 'public/css');

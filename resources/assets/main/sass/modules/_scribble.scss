@@ -1,0 +1,19 @@
+#scribbles{
+  @extend %clearfix;
+}
+.scribble{
+    @extend %center;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px $gray-dark solid;
+
+    @include mq(m){
+      width: 45%;
+      margin: 0.5em 2.5%;
+      float: left;
+    }
+    @include mq(l){
+      width: 27.33%;
+      margin: 0.5em 3%;
+    }
+}
