@@ -36,8 +36,9 @@
           <div class='nav__row-two' id="nav-ham">
             <div class="wrapper-row-two">
               <ul class='nav__list'>
-                <li class='nav__list__item'><a href="<?php echo $home."#projects"; ?>">Projects</a></li> <!-- Categories might switch -->
                 <li class='nav__list__item'><a href='http://blog.richieblack.me'>Blog</a></li>
+                <li class='nav__list__item'><a href='http://www.richieblack.me/contact'>Contact</a></li>
+                <li class='nav__list__item'><a href="<?php echo $home."#projects"; ?>">Projects</a></li>
               </ul>
             </div> <!-- end wrapper -->
           </div>

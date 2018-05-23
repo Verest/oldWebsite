@@ -1,1 +1,0 @@
-this is currently used for stateful calc, need to figure out at some point how to redirect media from the static folder.
