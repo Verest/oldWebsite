@@ -14,7 +14,6 @@ hamburgerButton.addEventListener("click",()=>{
   barBot.classList.toggle("transition-bar-bot");
 });
 
-
 var mode, sequence, phase, currentNum, round;
 var tLCell,tRCell,bLCell,bRCell,powerInd,strictInd,display;
 var tLSound,tRSound,bLSound,bRSound;

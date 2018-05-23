@@ -3,5 +3,8 @@
     "/css/main.css": "/css/main.css",
     "/css/simon.css": "/css/simon.css",
     "/css/tictactoe.css": "/css/tictactoe.css",
-    "/css/wikipedia-viewer.css": "/css/wikipedia-viewer.css"
+    "/css/wikipedia-viewer.css": "/css/wikipedia-viewer.css",
+    "/js/simon.js": "/js/simon.js",
+    "/js/tictactoe.js": "/js/tictactoe.js",
+    "/js/wikipedia-viewer.js": "/js/wikipedia-viewer.js"
 }

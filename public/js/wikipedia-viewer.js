@@ -14,7 +14,6 @@ hamburgerButton.addEventListener("click",()=>{
   barBot.classList.toggle("transition-bar-bot");
 });
 
-
 var contentID = ["#one", "#two", "#three", "#four", "#five", "#six", "#seven", "#eight", "#nine", "#ten"];
 var linkID = ["#linkOne", "#linkTwo", "#linkThree", "#linkFour", "#linkFive", "#linkSix", "#linkSeven", "#linkEight", "#linkNine", "#linkTen"];
 
@@ -25,7 +24,7 @@ function searchWiki(search) {
     url: "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + search + "&limit=15&redirects=resolve",
     crossDomain: true,
     headers: {
-      "Api-User-Agent": "codepen.io/Verest"
+      "Api-User-Agent": "www.richieblack.me"
     },
     success: function(data) {
       console.log(data);
