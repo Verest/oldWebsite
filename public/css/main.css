@@ -917,6 +917,12 @@ footer {
   width: 320px;
 }
 
+@media only screen and (max-width: 550px) {
+  .contact-form {
+    width: 320px;
+  }
+}
+
 @media only screen and (min-width: 551px) {
   .contact-form {
     width: 450px;
@@ -946,12 +952,20 @@ footer {
 
 .contact-label {
   display: inline-block;
+  vertical-align: middle;
   width: 5em;
   margin-left: -5em;
-  vertical-align: middle;
 }
 
-.contact-input {
-  width: 15em;
+@media only screen and (max-width: 550px) {
+  .contact-input {
+    width: 10em;
+  }
+}
+
+@media only screen and (min-width: 551px) {
+  .contact-input {
+    width: 15em;
+  }
 }
 

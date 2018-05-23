@@ -1,0 +1,49 @@
+.contact-form{
+  margin: 0 auto;
+  width: 320px;
+  @include mq(xs){
+    width: 320px;
+  }
+  @include mq(s){
+    width: 450px;
+  }
+  @include mq(m){
+    width: 600px;
+  }
+}
+
+.form-group{
+  padding:1.5625em 0;
+  @extend %center;
+}
+
+#form-submit{
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  display: block;
+  background-color: $color-cta;
+  border-radius: 10%;
+  font-size: 1.15em;
+  border: $brown 2px outset;
+  cursor: pointer;
+
+}
+
+.contact-label{
+  display:inline-block;
+  vertical-align: middle;
+
+  width: 5em;
+  margin-left:-5em;
+
+}
+
+.contact-input{
+  @include mq(xs){
+    width: 10em;
+  }
+  @include mq(s){
+    width: 15em;
+  }
+
+}
