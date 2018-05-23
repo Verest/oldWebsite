@@ -8,19 +8,29 @@
 
 @section('content')
 <section id="projects">
+  <?php $projects=App\Project::inRandomOrder()->get(); ?>
+
   <h2>Projects</h2>
+
+  @foreach($projects as $project)
+    @include("partials.project");
+  @endforeach
+
+  {{--
   <div class="card">
     <a href="projects/css-zen">
       <img class="card__images" src="img/css-zen.png" alt="css zen" />
     </a>
     <p>My CSS styling for <a href="http://www.csszengarden.com">CSS Zen Garden</a></p>
   </div>
+
   <div class="card">
     <a href="projects/stateful-calculator">
       <img class="card__images" src="img/state-calc.png" alt="stateful calculator" />
     </a>
     <p>A calculator made in React that records history</p>
   </div>
+
   <div class="card">
     <a href="projects/wikipedia-viewer">
       <img class="card__images" src="img/wiki-view.png" alt="wikipedia viewer" />
@@ -47,7 +57,7 @@
       <img class="card__images" src="img/markdown.png" alt="Markdown Previewer" />
     </a>
     <p>A markdown previewer made in React</p>
-  </div>
+  </div> --}}
 
   <!-- <div class="card">
     <a href="">
