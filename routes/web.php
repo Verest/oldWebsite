@@ -15,6 +15,10 @@ Route::get('/', function () {
   return view( 'index' );
 });
 
+Route::get('/contact', function(){
+  return view( 'contact' );
+});
+
 Route::get('/no-exist', function(){
   $url=request('url');
   return view( 'noExist', compact('url'));
