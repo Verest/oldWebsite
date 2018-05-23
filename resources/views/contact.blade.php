@@ -8,20 +8,21 @@
 
 @section('content')
   <h2>Contact Me</h2>
-  <form class="contact-form" action="index.html" method="post">
+  {{-- check action --}}
+  <form class="contact-form" action="contact.php" method="post">
     <div class="form-group">
-      <label for="name">Name</label>
-      <input id="name" type="text" name="name" value="" required>
+      <label class="contact-label" for="name">Name: </label>
+      <input class="contact-input" id="name" type="text" name="name" value="" required>
     </div>
 
     <div class="form-group">
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email" value="" required>
+      <label class="contact-label" for="email">Email: </label>
+      <input class="contact-input" id="email" type="email" name="email" value="" required>
     </div>
 
     <div class="form-group">
-      <label for="Message">Message</label>
-      <textarea id="Message" name="Message" value=""></textarea>
+      <label class="contact-label" for="Message">Message: </label>
+      <textarea class="contact-input" id="Message" name="Message" value=""></textarea>
     </div>
 
 

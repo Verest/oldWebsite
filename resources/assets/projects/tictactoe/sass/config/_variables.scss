@@ -12,7 +12,7 @@ $color-primary        : $turquoise;
 $color-secondary      : $blue;
 $color-tertiary       : $brown;
 $color-background     : lighten($silver,5%);
-$color-cta            : $red;
+$color-cta            : lighten($red, 20%);
 
 //variants of colors
 $color-primary-darker : darken($turquoise, 25%);

@@ -451,6 +451,7 @@ button {
 
 body {
   background-color: #e6eeff;
+  min-width: 320px;
   width: 100%;
   color: #252424;
 }

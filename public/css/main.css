@@ -22,7 +22,8 @@ h2,
 .scribble,
 .to-top,
 .purpose,
-.contact {
+.contact,
+.form-group {
   text-align: center;
 }
 
@@ -453,6 +454,7 @@ button {
 
 body {
   background-color: #e6eeff;
+  min-width: 320px;
   width: 100%;
   color: #252424;
 }
@@ -908,5 +910,48 @@ footer {
   .contact {
     margin-right: 3.33%;
   }
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media only screen and (min-width: 551px) {
+  .contact-form {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    width: 600px;
+  }
+}
+
+.form-group {
+  padding: 1.5625em 0;
+}
+
+#form-submit {
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  display: block;
+  background-color: #e19c8e;
+  border-radius: 10%;
+  font-size: 1.15em;
+  border: #A67E6C 2px outset;
+  cursor: pointer;
+}
+
+.contact-label {
+  display: inline-block;
+  width: 5em;
+  margin-left: -5em;
+  vertical-align: middle;
+}
+
+.contact-input {
+  width: 15em;
 }
 

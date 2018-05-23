@@ -26,6 +26,7 @@ button{
 
 body{
   background-color: $color-background;
+  min-width: 320px;
   width: 100%;
   color: $gray-dark;
 }
