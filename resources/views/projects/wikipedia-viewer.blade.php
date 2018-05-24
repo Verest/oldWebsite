@@ -1,5 +1,8 @@
 @extends('layouts.main')
 
+@section('title')
+  Wikipedia Viewer
+@endsection
 
 @section('css')
   <link href="../css/wikipedia-viewer.css" rel="stylesheet"

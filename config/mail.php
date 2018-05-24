@@ -32,6 +32,18 @@ return [
     'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
+    |added from https://stackoverflow.com/questions/30556773/how-to-fix-stream-socket-enable-crypto-ssl-operation-failed-with-code-1
+    |for testing in local environment
+    */
+    // 'stream' => [
+    //    'ssl' => [
+    //       'allow_self_signed' => true,
+    //       'verify_peer' => false,
+    //       'verify_peer_name' => false,
+    //    ],
+    // ],
+
+    /*
     |--------------------------------------------------------------------------
     | SMTP Host Port
     |--------------------------------------------------------------------------

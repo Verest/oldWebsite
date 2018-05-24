@@ -1,5 +1,8 @@
 @extends('layouts.main')
 
+@section('title')
+  Richie Black Homepage
+@endsection
 
 @section('css')
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -15,7 +18,7 @@
   @foreach($projects as $project)
     @include("partials.project")
   @endforeach
-  
+
 </section>
 
 <!-- <section id="scribbles">

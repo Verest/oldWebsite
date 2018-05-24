@@ -1,5 +1,8 @@
 @extends('layouts.main')
 
+@section('title')
+  Tic Tac Toe Game
+@endsection
 
 @section('css')
   <link href="../css/tictactoe.css" rel="stylesheet"

@@ -12,26 +12,28 @@ let mix = require('laravel-mix');
  */
 
 //main
-mix.js('resources/assets/main/js/hamburger.js', 'public/js')
+mix.babel([
+   'resources/assets/main/js/hamburger.js'
+], 'public/js/hamburger.js')
    .sass('resources/assets/main/sass/main.scss', 'public/css');
 
 //application projects
 //simon
-mix.combine([
+mix.babel([
   'resources/assets/main/js/hamburger.js',
   'resources/assets/projects/simon/js/simon.js'
 ], 'public/js/simon.js')
   .sass('resources/assets/projects/simon/sass/simon.scss', 'public/css');
 
 //tictactoe
-mix.combine([
+mix.babel([
   'resources/assets/main/js/hamburger.js',
   'resources/assets/projects/tictactoe/js/tictactoe.js'
 ], 'public/js/tictactoe.js')
    .sass('resources/assets/projects/tictactoe/sass/tictactoe.scss', 'public/css');
 
 //wikipedia-viewer
-mix.combine([
+mix.babel([
   'resources/assets/main/js/hamburger.js',
   'resources/assets/projects/wikipedia-viewer/js/wikipedia-viewer.js'
 ], 'public/js/wikipedia-viewer.js')

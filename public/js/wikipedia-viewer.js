@@ -1,11 +1,11 @@
-const hamburgerButton = document.getElementById("hamburger");
-const navItems = document.getElementById("nav-ham");
-const header = document.getElementsByTagName("header")[0];
-const barTop = document.querySelector(".bar-top");
-const barMid = document.querySelector(".bar-mid");
-const barBot = document.querySelector(".bar-bot");
+var hamburgerButton = document.getElementById("hamburger");
+var navItems = document.getElementById("nav-ham");
+var header = document.getElementsByTagName("header")[0];
+var barTop = document.querySelector(".bar-top");
+var barMid = document.querySelector(".bar-mid");
+var barBot = document.querySelector(".bar-bot");
 
-hamburgerButton.addEventListener("click",()=>{
+hamburgerButton.addEventListener("click", function () {
   navItems.classList.toggle("nav-show");
   header.classList.toggle("header-show");
 
@@ -26,7 +26,7 @@ function searchWiki(search) {
     headers: {
       "Api-User-Agent": "www.richieblack.me"
     },
-    success: function(data) {
+    success: function success(data) {
       console.log(data);
       var count = 0;
       //clear old seach content
@@ -41,7 +41,7 @@ function searchWiki(search) {
           break;
         }
         //get rid of disambiguation pages & no info pages
-        if (/may refer to/i.test(data[2][i])||!data[2][i]) {
+        if (/may refer to/i.test(data[2][i]) || !data[2][i]) {
           continue;
         }
         //update html
@@ -49,14 +49,14 @@ function searchWiki(search) {
         $(contentID[count]).find("p").html(data[2][i]); //content
         $(linkID[count]).attr("href", data[3][i]); //link
 
-        count++
+        count++;
       }
     }
   });
 }
 
-$(function() {
-  $('#searchForm').submit(function(e) {
+$(function () {
+  $('#searchForm').submit(function (e) {
     $(".results").addClass("display-all");
     searchWiki($("#searchText").val());
     e.preventDefault();

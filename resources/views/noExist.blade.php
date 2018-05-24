@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+  Page Not Found
+@endsection
+
 @section('css')
   <link rel="stylesheet" type="text/css" href="css/main.css">
 @endsection

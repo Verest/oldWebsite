@@ -1,5 +1,8 @@
 @extends('layouts.main')
 
+@section('title')
+  Simon Game
+@endsection
 
 @section('css')
   <link href="../css/simon.css" rel="stylesheet"
