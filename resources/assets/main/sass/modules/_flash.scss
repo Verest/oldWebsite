@@ -1,0 +1,15 @@
+.flash-message{
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  z-index: 20;
+  background-color: $color-cta;
+  border: 1px $brown solid;
+  padding: .5em;
+  border-radius: 10%;
+  transition: right 0.75s ease-out;
+  font-size: 1.25em;
+}
+.flash-message p{
+  margin:0;
+}

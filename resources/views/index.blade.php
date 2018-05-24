@@ -20,6 +20,17 @@
   @endforeach
 
 </section>
+<?php $message="test"; ?>
+@if(isset($message))
+<div class="flash-message">
+  <p>Message Sent!</p>
+</div>
+<script>
+  setTimeout(function(){
+    document.getElementsByClassName('flash-message')[0].style.right="-10em";
+  }, 3000)
+</script>
+@endif
 
 <!-- <section id="scribbles">
   <h2>Scribbles</h2>

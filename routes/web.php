@@ -16,13 +16,13 @@ use App\Mail\Message;
 
 Route::get('/', function () {
   return view( 'index' );
-});
+})->name('home');
 
 Route::post('/contact', function(){
   $message = request()->all();
   \Mail::to("richie@richieblack.me")->send(new Message($message));
   //need to redirect to home page with some flash message.
-  return redirect('/');
+  return redirect()->route('home', ['message' => 1]);
 });
 
 Route::get('/contact', function(){
