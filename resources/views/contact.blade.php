@@ -9,7 +9,9 @@
 @section('content')
   <h2>Contact Me</h2>
   {{-- check action --}}
-  <form class="contact-form" action="contact.php" method="post">
+  <form class="contact-form" action="contact" method="post">
+    {{ csrf_field() }}
+
     <div class="form-group">
       <label class="contact-label" for="name">Name: </label>
       <input class="contact-input" id="name" type="text" name="name" value="" required>
@@ -21,8 +23,8 @@
     </div>
 
     <div class="form-group">
-      <label class="contact-label" for="Message">Message: </label>
-      <textarea class="contact-input" id="Message" name="Message" value=""></textarea>
+      <label class="contact-label" for="message">Message: </label>
+      <textarea class="contact-input" id="message" name="message" value=""></textarea>
     </div>
 
 

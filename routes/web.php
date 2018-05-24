@@ -11,13 +11,24 @@
 |
 */
 
+//for post contact form
+use App\Mail\Message;
+
 Route::get('/', function () {
   return view( 'index' );
+});
+
+Route::post('/contact', function(){
+  $message = request()->all();
+  \Mail::to("richie@richieblack.me")->send(new Message($message));
+  //need to redirect to home page with some flash message.
+  return redirect('/');
 });
 
 Route::get('/contact', function(){
   return view( 'contact' );
 });
+
 
 Route::get('/no-exist', function(){
   $url=request('url');

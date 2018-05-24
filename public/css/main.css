@@ -950,9 +950,13 @@ footer {
   cursor: pointer;
 }
 
-.contact-label {
+.contact-label,
+.contact-input {
   display: inline-block;
   vertical-align: middle;
+}
+
+.contact-label {
   width: 5em;
   margin-left: -5em;
 }
